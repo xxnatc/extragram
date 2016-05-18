@@ -1,0 +1,54 @@
+#profile {
+  padding: 24px;
+}
+
+.profile-avatar {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bio-wrapper {
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  #profile {
+    display: flex;
+    align-items: center;
+    padding: 48px 24px;
+  }
+
+  .profile-avatar {
+    margin: 0px 48px;
+  }
+
+  .bio-wrapper {
+    text-align: left;
+  }
+}
+
+.gallery-img {
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 30px;
+}
+
+.gallery-img:hover {
+  opacity: 0.6;
+}
+
+.container {
+  max-width: 992px;
+}
+
+.error-msg {
+  color: #777;
+  font-size: 2rem;
+  text-align: center;
+  width: 100%;
+}

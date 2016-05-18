@@ -1,0 +1,64 @@
+.brand-logo {
+  height: 40px;
+  margin-top: 10px;
+}
+
+nav .container, .desktop-nav, .mobile-nav {
+  height: 100%;
+}
+
+.mobile-nav {
+  padding: 24px 0px 12px 0px;
+}
+
+.mobile-nav a {
+  text-align: center;
+  font-size: 2rem;
+  color: #dbdbdb;
+  cursor: pointer;
+}
+
+.mobile-nav a.active {
+  color: #555;
+}
+
+#mobile-search-form {
+  margin-top: 16px;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  nav {
+    height: 75px;
+    border-bottom: 1px solid #dbdbdb;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  .desktop-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .search-bar {
+    text-align: center;
+    width: 75%;
+    margin: 0px auto;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    color: #999;
+  }
+
+  .nav-options {
+    text-align: right;
+  }
+
+  .nav-options a {
+    font-size: 2.4rem;
+    margin-left: 24px;
+    color: #dbdbdb;
+    cursor: pointer;
+  }
+}
