@@ -9,6 +9,7 @@ function getUserImages(userId) {
 }
 
 function isValidImage(imgSrc) {
+  // converts jQuery Deferred object to ES6 Promise
   return new Promise((resolve, reject) => {
     $.get({
       url: apiEndpoint + '/valid-image',

@@ -1,3 +1,4 @@
+// populate gallery with one image
 function renderOneImage(src) {
   var $wrapper = $('<a>').attr({
     href: src,
@@ -11,6 +12,7 @@ function renderOneImage(src) {
   setSquare();
 }
 
+// populate profile elements
 function renderProfile(data) {
   var $img = $('<img>').attr({
     src: data.avatar || 'https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png',
@@ -23,6 +25,7 @@ function renderProfile(data) {
   $('#profile').append($img, $bioWrapper);
 }
 
+// show error message at specified area
 function renderMsg(elementId, msg) {
   var $error = $('<div>').text(msg).attr('class', 'error-msg');
   $(elementId).append($error);
@@ -32,6 +35,7 @@ function clearPage() {
   $('#gallery, #profile').empty();
 }
 
+// set up listener to size images to squares
 $(window)
   .on('resize', () => {
     var $galleryItem = $('.gallery-img');

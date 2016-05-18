@@ -10,6 +10,7 @@ validationRouter.get('/valid-image', jsonParser, (req, res) => {
   request
     .get(req.headers.src)
     .end((checkErr, checkRes) => {
+      // sends back 200 regardless, success is true when image is valid
       if (checkErr) return res.status(200).json({ msg: 'Error fetch source' });
       if (checkRes.status !== 200 || !checkRes.type.match(/image\//))
         return res.status(200).json({ msg: 'Invalid image source' });

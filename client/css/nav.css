@@ -1,7 +1,4 @@
-.brand-logo {
-  height: 40px;
-  margin-top: 10px;
-}
+/* ==================== NAV HEADER ==================== */
 
 nav .container, .desktop-nav, .mobile-nav {
   height: 100%;
@@ -40,6 +37,11 @@ nav .container, .desktop-nav, .mobile-nav {
   .desktop-nav {
     display: flex;
     align-items: center;
+  }
+
+  .brand-logo {
+    height: 40px;
+    margin-top: 10px;
   }
 
   .search-bar {

@@ -1,3 +1,15 @@
+.container {
+  max-width: 992px;
+}
+
+.error-msg {
+  color: #777;
+  font-size: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+/* ==================== PROFILE ==================== */
 #profile {
   padding: 24px;
 }
@@ -32,6 +44,8 @@
   }
 }
 
+/* ==================== GALLERY ==================== */
+
 .gallery-img {
   width: 100%;
   object-fit: cover;
@@ -40,15 +54,4 @@
 
 .gallery-img:hover {
   opacity: 0.6;
-}
-
-.container {
-  max-width: 992px;
-}
-
-.error-msg {
-  color: #777;
-  font-size: 2rem;
-  text-align: center;
-  width: 100%;
 }
