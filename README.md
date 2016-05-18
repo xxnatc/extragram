@@ -12,7 +12,7 @@ Not all features are fully implemented. Type username in the search bar to navig
 | `test2`    | All images are invalid |
 
 ### Deployed version
-This demo is deployed on Heroku at https://extragram.herokuapp.com/.
+This demo is deployed on Heroku at http://extragram.herokuapp.com/.
 
 ### Clone and run locally
 You can also download this repo by following these steps:
